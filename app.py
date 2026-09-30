@@ -148,7 +148,7 @@ with tab_gate:
             if gate_file is not None:
                 img_pil = Image.open(gate_file).convert("RGB")
                 gate_image_np = np.array(img_pil)
-                st.image(gate_image_np, caption="Visage capturé au portique", use_column_width=True)
+               st.image(gate_image_np, caption="Visage capturé au portique", use_container_width=True)
 
         with col_decision:
             st.markdown("#### 🔍 Recherche & Analyse de Stabilité")
