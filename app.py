@@ -121,7 +121,7 @@ with tab_enrol:
             cols = st.columns(3)
             for idx, (name, data) in enumerate(st.session_state['database'].items()):
                 with cols[idx % 3]:
-                    st.image(data['image'], caption=name, use_column_width=True)
+                    st.image(data['image'], caption=name, use_container_width=True)
 
 # ------------------------------------------------------------------------------
 # ONGLET 2 : PORTIQUE DE CONTRÔLE D'ACCÈS (IMAGE DEGRADÉE)
